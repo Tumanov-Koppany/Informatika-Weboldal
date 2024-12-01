@@ -1,5 +1,15 @@
-p.szöveg {
+p.fő-cím {
+  border: 5px outset green ;
+  position: sticky;
+  top: 0;
   font-size: 30px; 
   font-weight: bold;
   text-align: center;
+  background-color: whitesmoke;
+
 }
+
+.név {
+  font-weight: bold;
+}
+
