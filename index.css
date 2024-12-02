@@ -110,3 +110,8 @@ footer .chatGPT_2 img:hover {
 .cím_2:hover {
   opacity: 0.5;
 }
+
+.SUM {
+  font-weight: bold;
+  font-size: 18px;
+}
