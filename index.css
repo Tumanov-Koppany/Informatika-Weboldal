@@ -1,15 +1,39 @@
 p.fő-cím {
-  border: 5px outset green ;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border: 8px outset green ;
   position: sticky;
   top: 0;
   font-size: 30px; 
   font-weight: bold;
   text-align: center;
-  background-color: whitesmoke;
-
+  background-color: rgba(230, 230, 230, 0.795);
+  font-family: helvetica;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .név {
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: helvetica;
 }
 
+.cím {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: helvetica;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: helvetica;
+}
+
+address {
+  text-align: center;
+  margin-top: 30px;
+  font-family: helvetica;
+}
