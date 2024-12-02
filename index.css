@@ -1,40 +1,102 @@
-p.fő-cím {
-  margin-top: 0px;
-  margin-bottom: 5px;
-  border: 8px outset green ;
+/* Alap színek és tipográfia */
+:root {
+  --primary-color: #2d7f5e; /* zöld szín */
+  --accent-color: #4ca64c; /* világos zöld */
+  --background-color: #f0f0f0;
+  --footer-background: #333;
+  --text-color: #333;
+  --link-color: #2a8c6f;
+  --link-hover-color: #217a60;
+  --font-family: 'Roboto', sans-serif;
+}
+
+/* Alap stílusok */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+/* Fejléc */
+header .fő-cím {
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(45, 127, 94, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
   position: sticky;
   top: 0;
-  font-size: 30px; 
+  z-index: 100;
+}
+
+/* Szakaszok */
+section {
+  margin: 20px;
+}
+
+/* Terméklista */
+ul.termekek {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.termekek li {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul.termekek li a {
   font-weight: bold;
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+ul.termekek li a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Ár */
+ul.termekek li span {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #779;
+}
+
+/* Lábléc */
+footer {
+  background-color: var(--footer-background);
+  color: white;
+  padding: 0px;
+  padding-bottom: 0;
   text-align: center;
-  background-color: rgba(230, 230, 230, 0.795);
-  font-family: helvetica;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
 }
 
-.név {
-  font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: helvetica;
-}
-
-.cím {
-  margin-top: 25px;
+footer .copy {
+  display: block;
   margin-bottom: 10px;
-  font-family: helvetica;
 }
 
-ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: helvetica;
+footer .chatGPT_2 img {
+  width: 90px;
+  vertical-align: middle;
+  transition: opacity 0.3s ease;
 }
 
-address {
-  text-align: center;
-  margin-top: 35px;
-  font-family: helvetica;
-  font-size: 12px;
+footer .chatGPT_2 img:hover {
+  opacity: 0.5;
 }
