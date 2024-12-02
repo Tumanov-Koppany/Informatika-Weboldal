@@ -6,7 +6,7 @@
   --footer-background: #333;
   --text-color: #333;
   --link-color: #2a8c6f;
-  --link-hover-color: #217a60;
+  --link-hover-color: #1f7058;
   --font-family: 'helvetica', sans-serif;
 }
 
@@ -98,5 +98,15 @@ footer .chatGPT_2 img {
 }
 
 footer .chatGPT_2 img:hover {
+  opacity: 0.5;
+}
+
+.cím_2{
+  text-decoration: none;
+  color: inherit; 
+  transition: opacity 0.3s ease;
+}
+
+.cím_2:hover {
   opacity: 0.5;
 }
